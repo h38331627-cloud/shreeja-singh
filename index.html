@@ -2,732 +2,518 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-<meta charset="UTF-8">
+  <title>Shreeja Singh</title>
 
-<meta name="viewport"
-      content="width=device-width, initial-scale=1.0,
-      maximum-scale=1.0, user-scalable=no">
+  <!-- ================= META PIXEL ================= -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {
+      if(f.fbq)return;
+      n=f.fbq=function(){
+        n.callMethod ?
+        n.callMethod.apply(n,arguments) :
+        n.queue.push(arguments)
+      };
 
-<title>Shreeja Singh</title>
+      if(!f._fbq)f._fbq=n;
+      n.push=n;
+      n.loaded=!0;
+      n.version='2.0';
+      n.queue=[];
 
+      t=b.createElement(e);
+      t.async=!0;
+      t.src=v;
 
-<!-- =========================
-     META PIXEL
-========================= -->
+      s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)
+    }
+    (window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
 
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;
-n.push=n;
-n.loaded=!0;
-n.version='2.0';
-n.queue=[];
-t=b.createElement(e);
-t.async=!0;
-t.src=v;
-s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}
-(window,document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1834414497777781');
+    fbq('track', 'PageView');
+  </script>
 
-fbq('init','1834414497777781');
-fbq('track','PageView');
-</script>
+  <noscript>
+    <img
+      height="1"
+      width="1"
+      style="display:none"
+      src="https://www.facebook.com/tr?id=1834414497777781&ev=PageView&noscript=1"
+    />
+  </noscript>
 
-<noscript>
-<img
-height="1"
-width="1"
-style="display:none"
-src="https://www.facebook.com/tr?id=1834414497777781&ev=PageView&noscript=1"
-/>
-</noscript>
-
-
-<style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html,
-body{
-    width:100%;
-    height:100%;
-    overflow:hidden;
-}
-
-body{
-    background:#000;
-    color:#fff;
-    font-family:Arial,Helvetica,sans-serif;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    overflow:hidden;
-}
-
-
-/* =========================
-   MAIN FRAME
-========================= */
-
-.page{
-
-    width:min(100vw,430px);
-
-    height:100dvh;
-    max-height:100dvh;
-
-    padding:
-        clamp(10px,3.2vh,28px)
-        clamp(10px,4vw,16px)
-        clamp(8px,2.5vh,25px);
-
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-
-    text-align:center;
-
-    background:
-    radial-gradient(
-        circle at 50% 0%,
-        #073452 0%,
-        #031522 32%,
-        #01070b 70%,
-        #000 100%
-    );
-
-    border-left:2px solid #00c8ff;
-    border-right:2px solid #00c8ff;
-
-    box-shadow:
-        0 0 12px #00c8ff,
-        0 0 30px #0077ff,
-        inset 0 0 30px rgba(0,150,255,.18);
-
-    animation:frameGlow 2s ease-in-out infinite alternate;
-
-    overflow:hidden;
-}
-
-
-/* =========================
-   FRAME GLOW
-========================= */
-
-@keyframes frameGlow{
-
-    from{
-        box-shadow:
-        0 0 10px #00bfff,
-        0 0 25px #0077ff,
-        inset 0 0 20px rgba(0,150,255,.15);
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
     }
 
-    to{
-        box-shadow:
-        0 0 18px #00eaff,
-        0 0 45px #008cff,
-        inset 0 0 35px rgba(0,150,255,.25);
-    }
-}
-
-
-/* =========================
-   PROFILE
-========================= */
-
-.profile-wrap{
-
-    width:clamp(82px,15vh,135px);
-    height:clamp(82px,15vh,135px);
-
-    flex-shrink:0;
-
-    padding:4px;
-
-    border-radius:50%;
-
-    background:linear-gradient(
-        45deg,
-        #00eaff,
-        #0066ff,
-        #7900ff,
-        #00eaff
-    );
-
-    background-size:300% 300%;
-
-    box-shadow:
-        0 0 12px #00eaff,
-        0 0 30px #0077ff,
-        0 0 50px #0066ff;
-
-    animation:
-        neonRotate 3s linear infinite,
-        profileZoom 2s ease-in-out infinite;
-}
-
-.profile{
-
-    width:100%;
-    height:100%;
-
-    border-radius:50%;
-
-    object-fit:cover;
-
-    border:3px solid #000;
-}
-
-@keyframes neonRotate{
-
-    0%{
-        background-position:0% 50%;
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
     }
 
-    50%{
-        background-position:100% 50%;
+    body {
+      background: #000;
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 0;
     }
 
-    100%{
-        background-position:0% 50%;
-    }
-}
+    /* ================= 9:16 MOBILE FRAME ================= */
 
-@keyframes profileZoom{
+    .mobile-frame {
+      position: relative;
 
-    0%,100%{
-        transform:scale(1);
-    }
+      width: min(100vw, 56.25vh);
+      height: min(100vh, 177.78vw);
 
-    50%{
-        transform:scale(1.05);
-    }
-}
+      aspect-ratio: 9 / 16;
 
+      max-width: 430px;
+      max-height: 100vh;
 
-/* =========================
-   NAME
-========================= */
+      overflow: hidden;
 
-.title{
+      background:
+        radial-gradient(
+          circle at 50% 15%,
+          rgba(0, 140, 255, 0.18),
+          transparent 38%
+        ),
+        linear-gradient(180deg, #050505, #000);
 
-    width:100%;
+      border: 2px solid #00aaff;
+      border-radius: 18px;
 
-    margin-top:clamp(6px,1.8vh,18px);
+      box-shadow:
+        0 0 8px #00aaff,
+        0 0 25px rgba(0,170,255,0.45),
+        inset 0 0 25px rgba(0,170,255,0.08);
 
-    font-size:clamp(20px,5.8vw,28px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
-    font-weight:900;
-
-    letter-spacing:1px;
-
-    white-space:nowrap;
-
-    background:linear-gradient(
-        90deg,
-        #00eaff,
-        #ffffff,
-        #00aaff
-    );
-
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
-
-    text-shadow:
-        0 0 12px rgba(0,200,255,.5);
-}
-
-
-/* =========================
-   IMAGE SLIDER
-========================= */
-
-.slider-box{
-
-    width:clamp(78px,13vh,120px);
-    height:clamp(78px,13vh,120px);
-
-    flex-shrink:0;
-
-    margin-top:clamp(6px,1.8vh,18px);
-
-    position:relative;
-
-    overflow:hidden;
-
-    border-radius:12px;
-
-    border:2px solid #00eaff;
-
-    background:#02070a;
-
-    box-shadow:
-        0 0 10px #00eaff,
-        0 0 25px rgba(0,180,255,.7);
-}
-
-.slider-box img{
-
-    position:absolute;
-
-    width:100%;
-    height:100%;
-
-    left:0;
-    top:0;
-
-    object-fit:cover;
-
-    opacity:0;
-
-    transform:scale(.35);
-
-    animation:zoomImage 7.2s infinite;
-}
-
-.slider-box img:nth-child(1){
-    animation-delay:0s;
-}
-
-.slider-box img:nth-child(2){
-    animation-delay:2.4s;
-}
-
-.slider-box img:nth-child(3){
-    animation-delay:4.8s;
-}
-
-@keyframes zoomImage{
-
-    0%{
-        opacity:0;
-        transform:scale(.35);
+      padding: 3.2% 4%;
     }
 
-    6%{
-        opacity:1;
-        transform:scale(.75);
+    /* ================= PROFILE ================= */
+
+    .profile-img {
+      width: 23%;
+      aspect-ratio: 1 / 1;
+
+      object-fit: cover;
+
+      border-radius: 50%;
+
+      border: 3px solid #00aaff;
+
+      box-shadow:
+        0 0 10px #00aaff,
+        0 0 22px rgba(0,170,255,0.55);
+
+      flex-shrink: 0;
     }
 
-    15%{
-        opacity:1;
-        transform:scale(1);
+    .name {
+      margin-top: 1.8%;
+
+      font-size: clamp(17px, 4.7vw, 25px);
+      font-weight: 800;
+
+      text-align: center;
+
+      color: #fff;
+
+      text-shadow:
+        0 0 7px #00aaff,
+        0 0 15px rgba(0,170,255,0.6);
+
+      white-space: nowrap;
     }
 
-    25%{
-        opacity:1;
-        transform:scale(1.12);
+    /* ================= SLIDER ================= */
+
+    .slider {
+      width: 100%;
+
+      margin-top: 3%;
+
+      border-radius: 12px;
+
+      overflow: hidden;
+
+      border: 1px solid rgba(0,170,255,0.8);
+
+      box-shadow:
+        0 0 10px rgba(0,170,255,0.3);
+
+      position: relative;
+
+      aspect-ratio: 16 / 7;
+      flex-shrink: 0;
     }
 
-    31%{
-        opacity:0;
-        transform:scale(1.25);
+    .slides {
+      width: 300%;
+      height: 100%;
+
+      display: flex;
+
+      animation: slide 12s infinite;
     }
 
-    100%{
-        opacity:0;
-        transform:scale(1.25);
-    }
-}
+    .slide {
+      width: 33.3333%;
+      height: 100%;
 
-
-/* =========================
-   ANALYSIS
-========================= */
-
-.analysis{
-
-    width:100%;
-
-    margin-top:clamp(6px,1.8vh,18px);
-
-    font-size:clamp(16px,4.8vw,21px);
-
-    font-weight:900;
-
-    letter-spacing:.5px;
-
-    text-shadow:
-        0 0 8px #00eaff,
-        0 0 20px #008cff;
-}
-
-.subtitle{
-
-    width:100%;
-
-    margin-top:3px;
-
-    font-size:clamp(10px,3vw,13px);
-
-    color:#a9dfff;
-}
-
-
-/* =========================
-   TELEGRAM BUTTON
-========================= */
-
-.telegram-btn{
-
-    width:88%;
-    max-width:320px;
-
-    margin-top:clamp(7px,2vh,20px);
-
-    padding:clamp(9px,1.7vh,15px) 20px;
-
-    border-radius:50px;
-
-    display:block;
-
-    text-decoration:none;
-
-    color:#fff;
-
-    font-size:clamp(14px,4vw,18px);
-
-    font-weight:900;
-
-    background:linear-gradient(
-        90deg,
-        #0077cc,
-        #00bfff,
-        #0077ff
-    );
-
-    box-shadow:
-        0 0 12px #00bfff,
-        0 0 30px rgba(0,180,255,.65);
-
-    transition:.25s;
-}
-
-.telegram-btn:active{
-    transform:scale(.97);
-}
-
-
-/* =========================
-   IMPORTANT INFORMATION
-========================= */
-
-.points{
-
-    width:94%;
-
-    margin-top:clamp(7px,2vh,20px);
-
-    padding:
-        clamp(8px,1.8vh,14px)
-        clamp(9px,3vw,13px);
-
-    border-radius:13px;
-
-    background:rgba(0,80,130,.13);
-
-    border:1px solid rgba(0,190,255,.45);
-
-    box-shadow:
-        inset 0 0 15px rgba(0,150,255,.08);
-}
-
-.points-title{
-
-    font-size:clamp(12px,3.7vw,15px);
-
-    font-weight:900;
-
-    color:#00eaff;
-
-    margin-bottom:5px;
-}
-
-.points p{
-
-    font-size:clamp(8.5px,2.8vw,11.5px);
-
-    line-height:1.35;
-
-    color:#c9e9f7;
-
-    text-align:left;
-
-    margin:3px 0;
-}
-
-
-/* =========================
-   FOOTER
-========================= */
-
-.footer{
-
-    margin-top:clamp(6px,1.8vh,18px);
-
-    padding-bottom:2px;
-
-    font-size:clamp(7px,2.4vw,10px);
-
-    color:#7195a5;
-
-    flex-shrink:0;
-}
-
-
-/* =========================
-   VERY SMALL HEIGHT PHONES
-========================= */
-
-@media(max-height:650px){
-
-    .page{
-        padding-top:7px;
-        padding-bottom:6px;
+      flex-shrink: 0;
     }
 
-    .profile-wrap{
-        width:72px;
-        height:72px;
+    .slide img {
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+
+      display: block;
     }
 
-    .title{
-        margin-top:5px;
-        font-size:20px;
+    @keyframes slide {
+      0%, 28% {
+        transform: translateX(0);
+      }
+
+      33%, 61% {
+        transform: translateX(-33.3333%);
+      }
+
+      66%, 94% {
+        transform: translateX(-66.6666%);
+      }
+
+      100% {
+        transform: translateX(0);
+      }
     }
 
-    .slider-box{
-        width:68px;
-        height:68px;
-        margin-top:5px;
+    /* ================= TEXT ================= */
+
+    .main-title {
+      margin-top: 3%;
+
+      font-size: clamp(17px, 4.5vw, 24px);
+
+      font-weight: 900;
+
+      text-align: center;
+
+      color: #00b7ff;
+
+      text-shadow:
+        0 0 8px #00b7ff,
+        0 0 16px rgba(0,183,255,0.5);
+
+      white-space: nowrap;
     }
 
-    .analysis{
-        margin-top:5px;
-        font-size:16px;
+    .subtitle {
+      margin-top: 1.2%;
+
+      font-size: clamp(9px, 2.6vw, 13px);
+
+      color: #ddd;
+
+      text-align: center;
+
+      line-height: 1.3;
+
+      white-space: nowrap;
     }
 
-    .subtitle{
-        font-size:9px;
+    /* ================= TELEGRAM BUTTON ================= */
+
+    .telegram-btn {
+      width: 100%;
+
+      margin-top: 4%;
+
+      padding: 3.4% 3%;
+
+      border-radius: 10px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #0088cc,
+          #00aaff
+        );
+
+      color: #fff;
+
+      text-decoration: none;
+
+      text-align: center;
+
+      font-size: clamp(13px, 3.7vw, 18px);
+
+      font-weight: 800;
+
+      box-shadow:
+        0 0 10px rgba(0,170,255,0.5),
+        0 5px 15px rgba(0,0,0,0.5);
+
+      transition: 0.2s;
+
+      flex-shrink: 0;
     }
 
-    .telegram-btn{
-        margin-top:6px;
-        padding:8px 15px;
-        font-size:14px;
+    .telegram-btn:active {
+      transform: scale(0.97);
     }
 
-    .points{
-        margin-top:6px;
-        padding:7px 9px;
+    /* ================= DISCLAIMER ================= */
+
+    .info-box {
+      width: 100%;
+
+      margin-top: 3%;
+
+      padding: 3.2%;
+
+      border-radius: 10px;
+
+      background: rgba(255,255,255,0.045);
+
+      border: 1px solid rgba(255,255,255,0.12);
+
+      color: #ccc;
+
+      font-size: clamp(8px, 2.25vw, 11px);
+
+      line-height: 1.45;
+
+      text-align: center;
+
+      flex-shrink: 0;
     }
 
-    .points-title{
-        font-size:11px;
-        margin-bottom:3px;
+    .info-box strong {
+      color: #00b7ff;
     }
 
-    .points p{
-        font-size:8px;
-        line-height:1.25;
-        margin:2px 0;
+    /* ================= FOOTER ================= */
+
+    .footer {
+      width: 100%;
+
+      margin-top: auto;
+      padding-top: 2%;
+
+      text-align: center;
+
+      color: #777;
+
+      font-size: clamp(7px, 2vw, 10px);
+
+      line-height: 1.2;
+
+      flex-shrink: 0;
     }
 
-    .footer{
-        margin-top:5px;
-        font-size:7px;
+    /* ================= SMALL MOBILE ================= */
+
+    @media (max-height: 700px) {
+
+      .mobile-frame {
+        padding: 2.5% 3.5%;
+      }
+
+      .profile-img {
+        width: 20%;
+      }
+
+      .name {
+        margin-top: 1%;
+      }
+
+      .slider {
+        margin-top: 2%;
+      }
+
+      .main-title {
+        margin-top: 2%;
+      }
+
+      .telegram-btn {
+        margin-top: 2.5%;
+        padding: 2.7%;
+      }
+
+      .info-box {
+        margin-top: 2%;
+        padding: 2.5%;
+      }
     }
-}
 
+    /* ================= VERY SMALL SCREEN ================= */
 
-/* =========================
-   DESKTOP
-========================= */
+    @media (max-height: 600px) {
 
-@media(min-width:431px){
+      .mobile-frame {
+        border-radius: 12px;
+        padding: 2% 3%;
+      }
 
-    body{
-        padding:12px;
-        overflow:auto;
+      .profile-img {
+        width: 17%;
+        border-width: 2px;
+      }
+
+      .name {
+        font-size: 16px;
+      }
+
+      .main-title {
+        font-size: 16px;
+      }
+
+      .subtitle {
+        font-size: 8px;
+      }
+
+      .telegram-btn {
+        font-size: 12px;
+        padding: 2.2%;
+      }
+
+      .info-box {
+        font-size: 7px;
+        line-height: 1.3;
+      }
+
+      .footer {
+        font-size: 7px;
+      }
     }
-
-    .page{
-
-        height:calc(100vh - 24px);
-        min-height:600px;
-
-        border:2px solid #00c8ff;
-
-        border-radius:24px;
-    }
-}
-
-</style>
-
+  </style>
 </head>
-
 
 <body>
 
-<div class="page">
+  <div class="mobile-frame">
 
+    <!-- ================= PROFILE ================= -->
 
-    <!-- =========================
-         PROFILE
-         OLD BODYBUILDING PHOTO REMOVED
-    ========================== -->
+    <img
+      class="profile-img"
+      src="https://github.com/h38331627-cloud/shreeja-singh/blob/main/shreeja.jpg?raw=true"
+      alt="Shreeja Singh"
+    >
 
-    <div class="profile-wrap">
+    <div class="name">
+      Shreeja Singh
+    </div>
 
-        <img
-        class="profile"
-        src="https://github.com/h38331627-cloud/shreeja-singh/blob/main/shreeja.jpg?raw=true"
-        alt="Shreeja Singh">
+    <!-- ================= CRICKET SLIDER ================= -->
+
+    <div class="slider">
+
+      <div class="slides">
+
+        <!-- Shreeja Photo -->
+        <div class="slide">
+          <img
+            src="https://github.com/h38331627-cloud/shreeja-singh/blob/main/shreeja.jpg?raw=true"
+            alt="Shreeja Singh"
+          >
+        </div>
+
+        <!-- CPL -->
+        <div class="slide">
+          <img
+            src="https://github.com/h38331627-cloud/Riya-cricket-tips/blob/main/CPL-Caribbean-Premier-League.webp?raw=true"
+            alt="CPL Cricket"
+          >
+        </div>
+
+        <!-- Existing Cricket Image -->
+        <div class="slide">
+          <img
+            src="https://github.com/h38331627-cloud/Riya-cricket-tips/blob/main/images.jpg?raw=true"
+            alt="Cricket Analysis"
+          >
+        </div>
+
+      </div>
 
     </div>
 
+    <!-- ================= TITLE ================= -->
 
-    <!-- NAME -->
-
-    <div class="title">
-        Shreeja Singh
-    </div>
-
-
-    <!-- =========================
-         IMAGE SLIDER
-
-         1 = Shreeja
-         2 = CPL
-         3 = Existing Cricket/BBL
-    ========================== -->
-
-    <div class="slider-box">
-
-        <!-- OLD BODYBUILDING PHOTO REPLACED -->
-        <img
-        src="https://github.com/h38331627-cloud/shreeja-singh/blob/main/shreeja.jpg?raw=true"
-        alt="Shreeja Singh">
-
-
-        <!-- CPL IMAGE KEPT -->
-        <img
-        src="https://github.com/h38331627-cloud/Riya-cricket-tips/blob/main/CPL-Caribbean-Premier-League.webp?raw=true"
-        alt="CPL">
-
-
-        <!-- EXISTING CRICKET / BBL IMAGE KEPT -->
-        <img
-        src="https://github.com/h38331627-cloud/Riya-cricket-tips/blob/main/images.jpg?raw=true"
-        alt="Cricket">
-
-    </div>
-
-
-    <!-- ANALYSIS -->
-
-    <div class="analysis">
-        🏏 CRICKET ANALYSIS
+    <div class="main-title">
+      🏏 CRICKET ANALYSIS
     </div>
 
     <div class="subtitle">
-        Match Analysis • Cricket Updates • Sports Insights
+      Match Analysis • Cricket Updates • Sports Insights
     </div>
 
-
-    <!-- TELEGRAM -->
+    <!-- ================= TELEGRAM ================= -->
 
     <a
-    class="telegram-btn"
-    href="https://t.me/+Eo_0opSphl4zOWJl"
-    target="_blank"
-    rel="noopener noreferrer"
-    onclick="fbq('track','JoinTelegram');">
-
-        ✈️ JOIN TELEGRAM
-
+      class="telegram-btn"
+      href="https://t.me/+Eo_0opSphl4zOWJl"
+      onclick="fbq('trackCustom', 'JoinTelegram');"
+    >
+      🚀 JOIN TELEGRAM CHANNEL
     </a>
 
+    <!-- ================= INFORMATION ================= -->
 
-    <!-- IMPORTANT INFORMATION -->
+    <div class="info-box">
 
-    <div class="points">
+      <strong>⚠️ महत्वपूर्ण जानकारी</strong>
+      <br><br>
 
-        <div class="points-title">
-            ⚠️ IMPORTANT INFORMATION
-        </div>
+      यह पेज केवल क्रिकेट से जुड़ी जानकारी,
+      मैच एनालिसिस, स्पोर्ट्स अपडेट और
+      सामान्य जानकारी के उद्देश्य से बनाया गया है।
 
-        <p>
-            • यह प्लेटफॉर्म केवल सामान्य क्रिकेट analysis,
-            information और sports insights के लिए है।
-        </p>
+      <br><br>
 
-        <p>
-            • सभी analysis उपलब्ध जानकारी और statistical
-            observations पर आधारित होते हैं।
-        </p>
+      यहाँ दी गई जानकारी किसी भी प्रकार की
+      गारंटी या निश्चित परिणाम का दावा नहीं करती।
 
-        <p>
-            • किसी भी मैच के परिणाम की guarantee या निश्चित
-            prediction का दावा नहीं किया जाता।
-        </p>
+      <br><br>
 
-        <p>
-            • Cricket match के परिणाम कई परिस्थितियों पर
-            निर्भर करते हैं और बदल सकते हैं।
-        </p>
-
-        <p>
-            • किसी भी financial decision से पहले स्वयं उचित
-            जानकारी और सलाह प्राप्त करें।
-        </p>
+      किसी भी निर्णय से पहले अपनी स्वयं की
+      रिसर्च और समझ का उपयोग करें।
 
     </div>
 
-
-    <!-- FOOTER -->
+    <!-- ================= FOOTER ================= -->
 
     <div class="footer">
-        © 2026 Shreeja Singh • Sports Analysis & Updates
+      © 2026 Shreeja Singh • Sports Analysis & Updates
     </div>
 
-
-</div>
-
-
-<!-- =========================
-     TELEGRAM CLICK TRACKING
-========================= -->
-
-<script>
-
-document.querySelector('.telegram-btn')
-.addEventListener('click',function(){
-
-    if(typeof fbq === 'function'){
-
-        fbq('track','JoinTelegram',{
-            content_name:'Telegram Join Button',
-            content_category:'Cricket Analysis'
-        });
-
-    }
-
-});
-
-</script>
-
+  </div>
 
 </body>
 </html>
