@@ -2,12 +2,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport"
       content="width=device-width, initial-scale=1.0,
       maximum-scale=1.0, user-scalable=no">
 
 <title>Shreeja Singh</title>
+
+
+<!-- ================================
+     META PIXEL CODE
+================================ -->
+
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;
+n.push=n;
+n.loaded=!0;
+n.version='2.0';
+n.queue=[];
+t=b.createElement(e);
+t.async=!0;
+t.src=v;
+s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}
+(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1834414497777781');
+fbq('track', 'PageView');
+</script>
+
+<noscript>
+<img
+height="1"
+width="1"
+style="display:none"
+src="https://www.facebook.com/tr?id=1834414497777781&ev=PageView&noscript=1"
+/>
+</noscript>
+
+<!-- ================================
+     END META PIXEL
+================================ -->
+
 
 <style>
 
@@ -34,7 +76,11 @@ body{
     overflow-x:hidden;
 }
 
+
+/* MAIN MOBILE FRAME */
+
 .page{
+
     width:100%;
     max-width:430px;
 
@@ -221,7 +267,7 @@ body{
 }
 
 
-/* IMAGE ZOOM */
+/* SLIDER IMAGES */
 
 .slider-box img{
 
@@ -470,6 +516,7 @@ body{
 }
 
 </style>
+
 </head>
 
 
@@ -478,7 +525,8 @@ body{
 <div class="page">
 
 
-    <!-- PROFILE IMAGE -->
+    <!-- PROFILE IMAGE
+         BODY BUILDING PHOTO REMOVED -->
 
     <div class="profile-wrap">
 
@@ -497,21 +545,27 @@ body{
     </div>
 
 
-    <!-- IMAGE BOX -->
+    <!-- IMAGE BOX
+         1 = IPL
+         2 = CPL
+         3 = Cricket/BBL image -->
 
     <div class="slider-box">
 
+        <!-- Shreeja photo replaces ONLY old bodybuilding photo -->
         <img
         src="https://github.com/h38331627-cloud/shreeja-singh/blob/main/shreeja.jpg?raw=true"
         alt="Shreeja Singh">
 
+        <!-- CPL -->
         <img
-        src="https://github.com/h38331627-cloud/shreeja-singh/blob/main/shreeja.jpg?raw=true"
-        alt="Shreeja Singh">
+        src="https://github.com/h38331627-cloud/Riya-cricket-tips/blob/main/CPL-Caribbean-Premier-League.webp?raw=true"
+        alt="CPL Caribbean Premier League">
 
+        <!-- Existing Cricket / BBL image -->
         <img
-        src="https://github.com/h38331627-cloud/shreeja-singh/blob/main/shreeja.jpg?raw=true"
-        alt="Shreeja Singh">
+        src="https://github.com/h38331627-cloud/Riya-cricket-tips/blob/main/images.jpg?raw=true"
+        alt="Cricket BBL">
 
     </div>
 
@@ -533,7 +587,8 @@ body{
     class="telegram-btn"
     href="https://t.me/+Eo_0opSphl4zOWJl"
     target="_blank"
-    rel="noopener noreferrer">
+    rel="noopener noreferrer"
+    onclick="fbq('track','JoinTelegram');">
 
         ✈️ JOIN TELEGRAM
 
@@ -586,4 +641,3 @@ body{
 </body>
 </html>
 ```
-
