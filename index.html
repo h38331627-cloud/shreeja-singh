@@ -12,9 +12,9 @@
 <title>Shreeja Singh</title>
 
 
-<!-- ================================
-     META PIXEL CODE
-================================ -->
+<!-- =========================
+     META PIXEL
+========================= -->
 
 <script>
 !function(f,b,e,v,n,t,s)
@@ -30,11 +30,11 @@ t.async=!0;
 t.src=v;
 s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}
-(window, document,'script',
+(window,document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 
-fbq('init', '1834414497777781');
-fbq('track', 'PageView');
+fbq('init','1834414497777781');
+fbq('track','PageView');
 </script>
 
 <noscript>
@@ -46,10 +46,6 @@ src="https://www.facebook.com/tr?id=1834414497777781&ev=PageView&noscript=1"
 />
 </noscript>
 
-<!-- ================================
-     END META PIXEL
-================================ -->
-
 
 <style>
 
@@ -59,9 +55,11 @@ src="https://www.facebook.com/tr?id=1834414497777781&ev=PageView&noscript=1"
     box-sizing:border-box;
 }
 
-html,body{
+html,
+body{
     width:100%;
-    min-height:100%;
+    height:100%;
+    overflow:hidden;
 }
 
 body{
@@ -71,25 +69,27 @@ body{
 
     display:flex;
     justify-content:center;
-    align-items:flex-start;
+    align-items:center;
 
-    overflow-x:hidden;
+    overflow:hidden;
 }
 
 
-/* MAIN MOBILE FRAME */
+/* =========================
+   MAIN FRAME
+========================= */
 
 .page{
 
-    width:100%;
-    max-width:430px;
+    width:min(100vw,430px);
 
-    min-height:100vh;
-    min-height:100dvh;
+    height:100dvh;
+    max-height:100dvh;
 
-    margin:0 auto;
-
-    padding:28px 16px 25px;
+    padding:
+        clamp(10px,3.2vh,28px)
+        clamp(10px,4vw,16px)
+        clamp(8px,2.5vh,25px);
 
     display:flex;
     flex-direction:column;
@@ -119,6 +119,11 @@ body{
     overflow:hidden;
 }
 
+
+/* =========================
+   FRAME GLOW
+========================= */
+
 @keyframes frameGlow{
 
     from{
@@ -137,16 +142,18 @@ body{
 }
 
 
-/* PROFILE */
+/* =========================
+   PROFILE
+========================= */
 
 .profile-wrap{
 
-    width:135px;
-    height:135px;
+    width:clamp(82px,15vh,135px);
+    height:clamp(82px,15vh,135px);
 
     flex-shrink:0;
 
-    padding:5px;
+    padding:4px;
 
     border-radius:50%;
 
@@ -179,7 +186,7 @@ body{
 
     object-fit:cover;
 
-    border:4px solid #000;
+    border:3px solid #000;
 }
 
 @keyframes neonRotate{
@@ -204,20 +211,22 @@ body{
     }
 
     50%{
-        transform:scale(1.07);
+        transform:scale(1.05);
     }
 }
 
 
-/* NAME */
+/* =========================
+   NAME
+========================= */
 
 .title{
 
     width:100%;
 
-    margin-top:18px;
+    margin-top:clamp(6px,1.8vh,18px);
 
-    font-size:28px;
+    font-size:clamp(20px,5.8vw,28px);
 
     font-weight:900;
 
@@ -240,22 +249,24 @@ body{
 }
 
 
-/* IMAGE BOX */
+/* =========================
+   IMAGE SLIDER
+========================= */
 
 .slider-box{
 
-    width:120px;
-    height:120px;
+    width:clamp(78px,13vh,120px);
+    height:clamp(78px,13vh,120px);
 
     flex-shrink:0;
 
-    margin-top:18px;
+    margin-top:clamp(6px,1.8vh,18px);
 
     position:relative;
 
     overflow:hidden;
 
-    border-radius:15px;
+    border-radius:12px;
 
     border:2px solid #00eaff;
 
@@ -265,9 +276,6 @@ body{
         0 0 10px #00eaff,
         0 0 25px rgba(0,180,255,.7);
 }
-
-
-/* SLIDER IMAGES */
 
 .slider-box img{
 
@@ -334,15 +342,17 @@ body{
 }
 
 
-/* CRICKET ANALYSIS */
+/* =========================
+   ANALYSIS
+========================= */
 
 .analysis{
 
     width:100%;
 
-    margin-top:18px;
+    margin-top:clamp(6px,1.8vh,18px);
 
-    font-size:21px;
+    font-size:clamp(16px,4.8vw,21px);
 
     font-weight:900;
 
@@ -357,24 +367,26 @@ body{
 
     width:100%;
 
-    margin-top:6px;
+    margin-top:3px;
 
-    font-size:13px;
+    font-size:clamp(10px,3vw,13px);
 
     color:#a9dfff;
 }
 
 
-/* TELEGRAM BUTTON */
+/* =========================
+   TELEGRAM BUTTON
+========================= */
 
 .telegram-btn{
 
     width:88%;
     max-width:320px;
 
-    margin-top:20px;
+    margin-top:clamp(7px,2vh,20px);
 
-    padding:15px 20px;
+    padding:clamp(9px,1.7vh,15px) 20px;
 
     border-radius:50px;
 
@@ -384,7 +396,7 @@ body{
 
     color:#fff;
 
-    font-size:18px;
+    font-size:clamp(14px,4vw,18px);
 
     font-weight:900;
 
@@ -407,17 +419,21 @@ body{
 }
 
 
-/* IMPORTANT INFORMATION */
+/* =========================
+   IMPORTANT INFORMATION
+========================= */
 
 .points{
 
     width:94%;
 
-    margin-top:20px;
+    margin-top:clamp(7px,2vh,20px);
 
-    padding:14px 13px;
+    padding:
+        clamp(8px,1.8vh,14px)
+        clamp(9px,3vw,13px);
 
-    border-radius:15px;
+    border-radius:13px;
 
     background:rgba(0,80,130,.13);
 
@@ -429,89 +445,131 @@ body{
 
 .points-title{
 
-    font-size:15px;
+    font-size:clamp(12px,3.7vw,15px);
 
     font-weight:900;
 
     color:#00eaff;
 
-    margin-bottom:9px;
+    margin-bottom:5px;
 }
 
 .points p{
 
-    font-size:11.5px;
+    font-size:clamp(8.5px,2.8vw,11.5px);
 
-    line-height:1.55;
+    line-height:1.35;
 
     color:#c9e9f7;
 
     text-align:left;
 
-    margin:6px 0;
+    margin:3px 0;
 }
 
 
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
 
 .footer{
 
-    margin-top:18px;
+    margin-top:clamp(6px,1.8vh,18px);
 
-    padding-bottom:5px;
+    padding-bottom:2px;
 
-    font-size:10px;
+    font-size:clamp(7px,2.4vw,10px);
 
     color:#7195a5;
+
+    flex-shrink:0;
 }
 
 
-/* SMALL MOBILE */
+/* =========================
+   VERY SMALL HEIGHT PHONES
+========================= */
 
-@media(max-width:360px){
+@media(max-height:650px){
 
     .page{
-        padding-left:12px;
-        padding-right:12px;
+        padding-top:7px;
+        padding-bottom:6px;
     }
 
     .profile-wrap{
-        width:120px;
-        height:120px;
+        width:72px;
+        height:72px;
     }
 
     .title{
-        font-size:22px;
-        letter-spacing:.5px;
+        margin-top:5px;
+        font-size:20px;
     }
 
     .slider-box{
-        width:110px;
-        height:110px;
+        width:68px;
+        height:68px;
+        margin-top:5px;
     }
 
     .analysis{
-        font-size:19px;
+        margin-top:5px;
+        font-size:16px;
+    }
+
+    .subtitle{
+        font-size:9px;
+    }
+
+    .telegram-btn{
+        margin-top:6px;
+        padding:8px 15px;
+        font-size:14px;
+    }
+
+    .points{
+        margin-top:6px;
+        padding:7px 9px;
+    }
+
+    .points-title{
+        font-size:11px;
+        margin-bottom:3px;
     }
 
     .points p{
-        font-size:10.5px;
+        font-size:8px;
+        line-height:1.25;
+        margin:2px 0;
+    }
+
+    .footer{
+        margin-top:5px;
+        font-size:7px;
     }
 }
 
 
-/* LARGER SCREEN */
+/* =========================
+   DESKTOP
+========================= */
 
 @media(min-width:431px){
 
     body{
         padding:12px;
+        overflow:auto;
     }
 
     .page{
+
+        height:calc(100vh - 24px);
+        min-height:600px;
+
         border:2px solid #00c8ff;
+
         border-radius:24px;
-        min-height:calc(100vh - 24px);
     }
 }
 
@@ -525,8 +583,10 @@ body{
 <div class="page">
 
 
-    <!-- PROFILE IMAGE
-         BODY BUILDING PHOTO REMOVED -->
+    <!-- =========================
+         PROFILE
+         OLD BODYBUILDING PHOTO REMOVED
+    ========================== -->
 
     <div class="profile-wrap">
 
@@ -545,27 +605,32 @@ body{
     </div>
 
 
-    <!-- IMAGE BOX
-         1 = IPL
+    <!-- =========================
+         IMAGE SLIDER
+
+         1 = Shreeja
          2 = CPL
-         3 = Cricket/BBL image -->
+         3 = Existing Cricket/BBL
+    ========================== -->
 
     <div class="slider-box">
 
-        <!-- Shreeja photo replaces ONLY old bodybuilding photo -->
+        <!-- OLD BODYBUILDING PHOTO REPLACED -->
         <img
         src="https://github.com/h38331627-cloud/shreeja-singh/blob/main/shreeja.jpg?raw=true"
         alt="Shreeja Singh">
 
-        <!-- CPL -->
+
+        <!-- CPL IMAGE KEPT -->
         <img
         src="https://github.com/h38331627-cloud/Riya-cricket-tips/blob/main/CPL-Caribbean-Premier-League.webp?raw=true"
-        alt="CPL Caribbean Premier League">
+        alt="CPL">
 
-        <!-- Existing Cricket / BBL image -->
+
+        <!-- EXISTING CRICKET / BBL IMAGE KEPT -->
         <img
         src="https://github.com/h38331627-cloud/Riya-cricket-tips/blob/main/images.jpg?raw=true"
-        alt="Cricket BBL">
+        alt="Cricket">
 
     </div>
 
@@ -581,7 +646,7 @@ body{
     </div>
 
 
-    <!-- TELEGRAM BUTTON -->
+    <!-- TELEGRAM -->
 
     <a
     class="telegram-btn"
@@ -631,12 +696,38 @@ body{
     </div>
 
 
+    <!-- FOOTER -->
+
     <div class="footer">
         © 2026 Shreeja Singh • Sports Analysis & Updates
     </div>
 
 
 </div>
+
+
+<!-- =========================
+     TELEGRAM CLICK TRACKING
+========================= -->
+
+<script>
+
+document.querySelector('.telegram-btn')
+.addEventListener('click',function(){
+
+    if(typeof fbq === 'function'){
+
+        fbq('track','JoinTelegram',{
+            content_name:'Telegram Join Button',
+            content_category:'Cricket Analysis'
+        });
+
+    }
+
+});
+
+</script>
+
 
 </body>
 </html>
